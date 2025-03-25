@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="#FFFFFF">
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TO_DO_LIST"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="10dp"
+        android:background="#3F51B5"
+        android:textColor="#FFFFFF" />
+
+    <!-- Task Input Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:background="#E0E0E0">
+
+        <EditText
+            android:id="@+id/editTextTask"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Enter Task"
+            android:background="#FFFFFF"
+            android:padding="8dp" />
+
+        <Button
+            android:id="@+id/buttonSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:background="#6200EA"
+            android:padding="8dp"/>
+    </LinearLayout>
+
+    <!-- Remaining Task Header -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Remaining Tasks"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:background="#FF5722"
+        android:padding="5dp" />
+
+    <!-- ListView for Remaining Tasks -->
+    <ListView
+        android:id="@+id/listViewRemaining"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#FFF3E0" />
+
+    <!-- CheckBox Section for Completed Tasks -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear Completed Tasks"
+            android:textStyle="italic"
+            android:padding="5dp" />
+    </LinearLayout>
+
+    <!-- Completed Task Header -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Completed Tasks"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:background="#4CAF50"
+        android:padding="5dp" />
+
+    <!-- ListView for Completed Tasks -->
+    <ListView
+        android:id="@+id/listViewCompleted"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#E8F5E9" />
+
+</LinearLayout>
