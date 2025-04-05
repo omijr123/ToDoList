@@ -1,5 +1,6 @@
 # To-Do List App - Android (Java)
 
+
 ## Description
 
 A simple and intuitive To-Do List application for Android built with Java in Android Studio. This app helps users organize their tasks efficiently with two clear sections:
@@ -21,4 +22,7 @@ A simple and intuitive To-Do List application for Android built with Java in And
 - Uses ListView with custom adapters
 - Implements checkbox functionality for task completion
 - Follows basic MVVM pattern for data management
+
+
+![pic1](https://github.com/user-attachments/assets/0a645737-ce2e-462e-abb0-38b86295dcab)
 
